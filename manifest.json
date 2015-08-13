@@ -1,0 +1,9 @@
+{
+  "name": "8bitdash",
+  "description": "Override the new tab page with 8bitdash.com",
+  "version": "0.1",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "manifest_version": 2
+}

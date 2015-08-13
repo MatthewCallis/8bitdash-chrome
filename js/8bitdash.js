@@ -2,7 +2,7 @@ var pageIndex = 1
 
 var Dash = function() {
 
-  var cr_hld = "<a target=\"_blank\" href=\"http://www.heart-machine.com/\">heart-machine.com</a>"+ 
+  var cr_hld = "<a target=\"_blank\" href=\"http://www.heart-machine.com/\">heart-machine.com</a>"+
     "+ <a target=\"_blank\" href=\"http://www.twitter.com/heartmachinez\">@HeartMachineZ</a>"
   var cr_ms = "<a target=\"_blank\" href=\"http://www.antonkudin.me/megasphere/\">Megasphere</a>"+
     " by Anton Kudin (<a href=\"http://www.twitter.com/antonkudin\">@antonkudin</a>)"
@@ -13,7 +13,6 @@ var Dash = function() {
   var cr_vb = "<a target=\"_blank\" href=\"http://www.valenberg.com/\">valenberg.com</a>"
   var cr_rw = "Rain World (<a target=\"_blank\" href=\"http://store.steampowered.com/app/312520/\">Steam</a>, <a target=\"_blank\" href=\"https://twitter.com/RainWorldGame\">Twitter</a>)"
   var cr_bp = "JayTKnox (<a target=\"_blank\" href=\"http://jayknoxart.tumblr.com\">jayknoxart.tumblr.com</a>, <a target=\"_blank\" href=\"https://twitter.com/JayTKnox\">@JayTKnox</a>)"
-  var cr_itr = "<a target=\"_blank\" href=\"http://www.facebook.com/intotherift\">Into The Rift</a>"
 
   var credits = {
     "bebop.gif": cr_bp,
@@ -27,7 +26,7 @@ var Dash = function() {
     "skate.gif": cr_vb,
     "streets.gif": cr_vb,
     "tv.gif": cr_vb,
-    "barfly.gif": "Longshot", 
+    "barfly.gif": "Longshot",
     "first.png": cr_ls,
     "second.png": cr_ls,
     "third.png": cr_ls,
@@ -37,7 +36,7 @@ var Dash = function() {
     "pups_fixed.gif": cr_rw,
     "sticks_and_stones.gif": cr_rw,
     "hyperlight.gif": cr_hld,
-    "hyperlight2.gif": cr_hld, 
+    "hyperlight2.gif": cr_hld,
     "megasphere1.gif": cr_ms,
     "megasphere2.gif": cr_ms,
     "megasphere3.gif": cr_ms,
@@ -45,12 +44,12 @@ var Dash = function() {
     "megasphere5.gif": cr_ms,
     "wizard.gif" : cr_sg,
     "gang.gif" : cr_sg,
-    "darksouls.gif" : cr_sg, 
+    "darksouls.gif" : cr_sg,
     "woods.png": "",
     "mockup.gif": cr_bs,
     "bitslap.gif": cr_bs,
     "asylumgate.gif": cr_bs,
-    "nightcycle.gif": cr_bs, 
+    "nightcycle.gif": cr_bs,
     "fireflyreboot.gif": cr_bs,
     "town.png":"http://www.serebiiforums.com/showthread.php?379701-Another-Sprite-Showcase",
     "ironberg.png":"http://www.serebiiforums.com/showthread.php?379701-Another-Sprite-Showcase",
@@ -79,25 +78,22 @@ var Dash = function() {
     "castle.gif": cr_mf,
     "grandcanyon.gif": cr_mf,
     "sea.gif": cr_mf,
-    "cyber.gif": "http://flexroman.tumblr.com/",
-    "intotherift.gif": cr_itr,
-    "intotherift2.gif": cr_itr,
-    "intotherift3.gif": cr_itr
+    "cyber.gif": "http://flexroman.tumblr.com/"
   }
 
-  var modes = {"landscapes": 
+  var modes = {"landscapes":
     ["fire.gif",
-    "town.gif", 
+    "town.gif",
     "bridge.gif",
      "coast.gif",
-     "dawn.gif", 
+     "dawn.gif",
      "grandcanyon.gif",
      "northlights.gif",
      "lake.gif",
-     "falls.gif", 
+     "falls.gif",
      "castle.gif",
      "bridge_raining.gif",
-     "snow.gif", 
+     "snow.gif",
      "nature.gif",
      "sea.gif",
      "swirling.gif",
@@ -118,9 +114,6 @@ var Dash = function() {
     "skate.gif",
     "streets.gif",
     "tv.gif"],
-    "intotherift":["intotherift.gif",
-    "intotherift2.gif",
-    "intotherift3.gif"],
      "lennsan": ["first.png",
       "second.png", "third.png",
       "fourth.gif", "fifth.gif"],
@@ -133,37 +126,37 @@ var Dash = function() {
         "hyperlight2.gif"],
      "megasphere":
        ["megasphere1.gif",
-        "megasphere2.gif", 
+        "megasphere2.gif",
         "megasphere3.gif",
         "megasphere4.gif",
         "megasphere5.gif"],
      "bandygrass":
        ["gang.gif", "darksouls.gif", "wizard.gif"],
      "woods":
-     ["woods.png"],  
+     ["woods.png"],
      "movies":["bebop.gif"],
-     "other": 
+     "other":
     ["barfly.gif",
-    "nightcycle.gif", 
-    "fireflyreboot.gif", 
-    "mockup.gif", 
-    "asylumgate.gif", 
+    "nightcycle.gif",
+    "fireflyreboot.gif",
+    "mockup.gif",
+    "asylumgate.gif",
     "bitslap.gif",
-    "town.png", 
-    "ironberg.png", 
-    "forrest.png", 
-    "leonard.png", 
+    "town.png",
+    "ironberg.png",
+    "forrest.png",
+    "leonard.png",
     "dungeon.gif"]
   }
 
-  var startingModes = ["landscapes", "intotherift", "valenberg",
-      "lennsan", "rainworld", "bandygrass", 
+  var startingModes = ["landscapes", "valenberg",
+      "lennsan", "rainworld", "bandygrass",
       "hyperlightdrifter", "megasphere", "movies"]
   var x = Math.random() * startingModes.length;
-  
+
   this.curMode = startingModes[Math.floor(x)];
-  this.custom = "Insert URL"; 
-  
+  this.custom = "Insert URL";
+
   this.page = "clock"
   this.curIndex = 0;
 
@@ -176,7 +169,7 @@ var Dash = function() {
     var rule = document.styleSheets[0].cssRules[0];
     var postfix = "no-repeat center center fixed";
     var s = "url(" + imageURL + ") " + postfix;
-    rule.style.background = s 
+    rule.style.background = s
     rule.style.backgroundSize = "cover"
   }
 
@@ -188,7 +181,7 @@ var Dash = function() {
   this.changeCredit = function(name) {
     console.log("Changing credit to " + name);
     var s = name;
-    document.getElementById("footer").innerHTML = s; 
+    document.getElementById("footer").innerHTML = s;
   }
 
   this.updateBackground = function() {
@@ -200,7 +193,7 @@ var Dash = function() {
     } else {
       this.changeCredit("Mention me @madewithtea to take credit for your art.")
     }
-  } 
+  }
 
   this.nextBackground = function() {
     this.curIndex += 1;
@@ -211,7 +204,7 @@ var Dash = function() {
   }
 
   this.previousBackground = function() {
-    this.curIndex -= 1; 
+    this.curIndex -= 1;
     if(this.curIndex < 0) {
       this.curIndex = modes[this.curMode].length - 1;
     }
@@ -221,7 +214,7 @@ var Dash = function() {
   this.initialize = function(basil) {
     // read the configuration
     this.basil = basil;
-    
+
     var keys = basil.keys()
     if(keys.indexOf("mode2") != -1) {
       this.curMode = basil.get("mode2");
@@ -238,25 +231,25 @@ var Dash = function() {
       this.custom = basil.get("customURL");
       if(this.custom.startsWith("http")) {
         this.changeCSS(this.custom);
-        console.log(this.custom);  
+        console.log(this.custom);
         console.log("loaded custom URL from saved settings")
       }
     }
   }
 
   this.changeMode = function(mode) {
-    this.curMode = mode 
+    this.curMode = mode
     this.curIndex = 0
     this.updateBackground();
 
     this.basil.set("mode2", mode);
     this.basil.set("done-tutorial", true);
-  } 
+  }
 
   this.changePage = function(page) {
     this.page = page
     this.basil.set("page", page);
-   
+
     if(page == "clock") {
       $.fn.fullpage.moveTo(1,1);
     } else {
@@ -268,7 +261,7 @@ var Dash = function() {
 var updateClock = function() {
     var currentTime = new Date();
     var currentHours = currentTime.getHours();
-    
+
     var greeting = ""
     if((0 <= currentHours) && (currentHours < 6)) {
       greeting = "Good Night"
@@ -285,21 +278,21 @@ var updateClock = function() {
     if((22 <= currentHours) && (currentHours < 24)) {
       greeting = "Sleep Well"
     }
-    
+
     var currentMinutes = currentTime.getMinutes ( );
     var currentSeconds = currentTime.getSeconds ( );
-  
+
     currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
     currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
-  
+
     var timeOfDay = ( currentHours < 12 ) ? "am" : "pm";
-  
+
     currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
     currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-  
+
     var currentTimeString = currentHours + ":" + currentMinutes + " " + timeOfDay;
     document.getElementById("clock").firstChild.nodeValue = currentTimeString;
-    document.getElementById("greeting").firstChild.nodeValue = greeting 
+    document.getElementById("greeting").firstChild.nodeValue = greeting
   }
 
 window.onload = function() {
@@ -308,19 +301,19 @@ window.onload = function() {
      resize: false,
      css3: true,
      onLeave: function(index, nextIndex, direction){
-      pageIndex = nextIndex 
+      pageIndex = nextIndex
      }
   })
 
   var dash = new Dash()
-  var basil = new window.Basil(); 
+  var basil = new window.Basil();
 
-  dash.initialize(basil) 
+  dash.initialize(basil)
   var gui = new dat.GUI();
   dat.GUI.toggleHide();
 
   var defa = gui.addFolder('default');
-  var themes = ["landscapes", "valenberg", "intotherift", "lennsan", 
+  var themes = ["landscapes", "valenberg", "lennsan",
       "rainworld", "hyperlightdrifter",
       "megasphere", "bandygrass", "woods", "movies", "other"];
   var themes = defa.add(dash, "theme", themes);
@@ -350,7 +343,7 @@ window.onload = function() {
   }
 
   updateClock();
-  setInterval('updateClock()', 10000 )
+  setInterval(function() { updateClock(); }, 10000 );
 
   Mousetrap.bind("right", function() {
     dash.nextBackground()});
@@ -403,5 +396,5 @@ window.onload = function() {
   });
 
   initMap();
-}
 
+}
