@@ -8,5 +8,5 @@ Follow the extension packaging instructions published at https://developer.chrom
 
 ## Credits
 
-All the credits go to the original developers of 8bitdash/8bitdash.github.io.
+All the credits go to the original developers of [8bitdash](https://github.com/8bitdash/8bitdash.github.io). <br />
 Thank you for your super geek project!
