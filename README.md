@@ -6,7 +6,7 @@ A fork of the original http://www.8bitdash.com/ providing all its awesomeness in
 
 ## Setup
 
-Follow the extension packaging instructions published at https://developer.chrome.com/extensions/packaging.
+Follow the packaging instructions published at https://developer.chrome.com/extensions/packaging.
 
 ## Credits
 
