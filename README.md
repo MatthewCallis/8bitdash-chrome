@@ -2,6 +2,8 @@
 
 A fork of the original http://www.8bitdash.com/ providing all its awesomeness in a Chrome extension.
 
+<img src='./preview.gif' alt='8bitdash-chrome' height='500'/>
+
 ## Setup
 
 Follow the extension packaging instructions published at https://developer.chrome.com/extensions/packaging.
