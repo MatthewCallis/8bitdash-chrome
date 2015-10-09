@@ -164,7 +164,6 @@ var links = {
         {"title":"Netlabels", "url" : "http://www.clongclongmoo.org/labels/"},
         {"title":"Magnatune", "url":"http://magnatune.com/genres/ambient/"}
       ]}],
-
     "Tools": [
        {
       "title": "Documents", 
@@ -236,7 +235,7 @@ var links = {
         {"title":"NomadList", "url" : "http://www.nomadlist.com"},
         {"title":"Nomadler", "url" : "http://www.nomadler.com"},
         {"title":"WorkFrom", "url" : "https://workfrom.co"},
-        {"title":"AirBnB", "url" : "https://www.airbnb.com/"},
+        {"title":"RemoteOK", "url" : "https://remoteok.io/"},
         {"title":"on Reddit", "url" : "http://www.reddit.com/r/telecommuting/"},
       ]},
       {
@@ -390,9 +389,10 @@ var topics = {
     {"name":"Games"}, 
     {"name":"Fun"}, 
     {"name":"Music"}, 
-    {"name":"Tools"},
     {"name":"Movies"},
-    {"name":"Travel"}]
+    {"name":"Travel"},
+    {"name":"Tools"}
+  ]
 }
 
 var loadCell = function(number, entries) {
