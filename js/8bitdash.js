@@ -1,3 +1,8 @@
+if(window.u == undefined) {
+  var smf = function(s) {}  
+  window.u = { sm: smf }
+}
+
 var pageIndex = 1
 var LANG = "english";
 var goodMorning = {
@@ -102,6 +107,7 @@ var Dash = function() {
     "necromorph2.gif": cr_nec,
     "necromorph3.gif": cr_nec,
     "bebop.gif": cr_bp,
+    "nighttrain.gif": cr_vb, 
     "lowlands.gif": cr_vb,
     "echoesfromneals.gif": cr_vb,
     "bicycle.gif": cr_vb,
@@ -216,6 +222,7 @@ var Dash = function() {
       "youngatnight.gif"
      ],
      "valenberg": [
+    "nighttrain.gif",
     "drift.gif",
     "lowlands.gif",   
     "bicycle.gif",
@@ -541,5 +548,4 @@ window.onload = function() {
 
   initMap();
 }
-
 
